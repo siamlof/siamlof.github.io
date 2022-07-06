@@ -176,6 +176,12 @@ function openMenu(evt, menuName) {
   evt.currentTarget.firstElementChild.className += " w3-dark-grey";
 }
 document.getElementById("myLink").click();
+
+document.getElementsByTagName('myVideo')[0].onended = function () {
+  this.load();
+  this.play();
+};
+  
 </script>
 
 </body>
